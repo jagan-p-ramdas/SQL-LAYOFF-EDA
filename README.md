@@ -29,7 +29,7 @@ The dataset used in this analysis is stored in the layoff_staging2 table, which 
 SELECT *
 FROM layoff_staging2;
 ```
-This helps in getting an overall view of the dataset.
+-- This helps in getting an overall view of the dataset.
 
 *2. Maximum Layoffs and Layoff Percentage*
 ```
@@ -38,7 +38,7 @@ FROM layoff_staging2;
 ```
 Identified companies with the highest layoffs.
 
-Some companies had 100% layoffs.
+-- Some companies had 100% layoffs.
 
 *3. Companies with 100% Layoffs*
 ```
@@ -47,7 +47,7 @@ FROM layoff_staging2
 WHERE percentage_laid_off = 1
 ORDER BY total_laid_off DESC;
 ```
-Redbox and Lilium had the highest layoffs with complete workforce reductions.
+-- Redbox and Lilium had the highest layoffs with complete workforce reductions.
 
 *4. Companies with the Most Layoffs*
 ```
@@ -56,16 +56,16 @@ FROM layoff_staging2
 GROUP BY company
 ORDER BY 2 DESC;
 ```
-Amazon had the highest number of layoffs (17,690).
+-- Amazon had the highest number of layoffs (17,690).
 
 *5. First and Last Recorded Layoffs*
 ```
 SELECT MIN(`date`), MAX(`date`)
 FROM layoff_staging2;
 ```
-The earliest recorded layoff happened on 2023-01-01.
+-- The earliest recorded layoff happened on 2023-01-01.
 
-The most recent layoff occurred on 2025-03-19.
+-- The most recent layoff occurred on 2025-03-19.
 
 *6. Industry with the Most Layoffs*
 ```
@@ -74,9 +74,9 @@ FROM layoff_staging2
 GROUP BY industry
 ORDER BY 2 DESC;
 ```
-The "Other" category and Hardware industry had the most layoffs.
+-- The "Other" category and Hardware industry had the most layoffs.
 
-IT industry had the least layoffs.
+-- IT industry had the least layoffs.
 
 *7. Countries with the Most Layoffs*
 ```
@@ -85,11 +85,11 @@ FROM layoff_staging2
 GROUP BY country
 ORDER BY 2 DESC;
 ```
-United States had the highest layoffs (306,205).
+-- United States had the highest layoffs (306,205).
 
-India followed with 26,395 layoffs.
+-- India followed with 26,395 layoffs.
 
-Malta had the least layoffs (29).
+-- Malta had the least layoffs (29).
 
 *8. Layoffs by Date*
 ```
@@ -98,7 +98,7 @@ FROM layoff_staging2
 GROUP BY `date`
 ORDER BY 2 DESC;
 ```
-The highest number of layoffs occurred on 2023-01-04 (16,171 layoffs).
+-- The highest number of layoffs occurred on 2023-01-04 (16,171 layoffs).
 
 *9. Layoffs by Year*
 ```
@@ -107,7 +107,7 @@ FROM layoff_staging2
 GROUP BY YEAR(`date`)
 ORDER BY 2 DESC;
 ```
-2023 was the worst year, with 264,192 layoffs.
+-- 2023 was the worst year, with 264,192 layoffs.
 
 *10. Rolling Total of Layoffs*
 ```
@@ -121,7 +121,7 @@ SELECT `MONTH`, total_off,
        SUM(total_off) OVER(ORDER BY `MONTH`) AS Rolling_Total
 FROM Rolling_total_CTE;
 ```
-A total of 440,030 people lost their jobs over the recorded period.
+-- A total of 440,030 people lost their jobs over the recorded period.
 
 *11. Companies with the Most Layoffs Per Year*
 ```
@@ -139,15 +139,15 @@ SELECT *
 FROM Company_Year_Rank
 WHERE ranking <= 5;
 ```
-2023: Amazon had the most layoffs.
+-- 2023: Amazon had the most layoffs.
 
-2024: Intel led in layoffs.
+-- 2024: Intel led in layoffs.
 
-2025 (first three months): Meta had the most layoffs.
+-- 2025 (first three months): Meta had the most layoffs.
 
 ## **Conclusion**
 
-This SQL exploratory analysis provided insights into:
+**This SQL exploratory analysis provided insights into:**
 
 Companies, industries, and countries most affected by layoffs.
 
@@ -169,7 +169,7 @@ Incorporating more detailed employee data.
 
 Jagan P Ramdas
 
-Linkdin : *https://www.linkedin.com/in/jagan-p-ramdas-9b939530a/*
+**Linkdin** : *https://www.linkedin.com/in/jagan-p-ramdas-9b939530a/*
 
 
 
