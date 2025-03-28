@@ -10,17 +10,17 @@ This project is an exploratory data analysis (EDA) of layoffs in various compani
 
 The dataset used in this analysis is stored in the layoff_staging2 table, which contains information about layoffs, including:
 
-**Company**
+-- **Company**
 
-**Country**
+-- **Country**
 
-**Industry**
+-- **Industry**
 
-**Date of layoff**
+-- **Date of layoff**
 
-**Total number of employees laid off**
+-- **Total number of employees laid off**
 
-**Percentage of workforce laid off**
+-- **Percentage of workforce laid off**
 
 ## **Key Analyses and Findings**
 
