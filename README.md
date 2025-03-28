@@ -165,11 +165,11 @@ Investigating external factors (economic downturns, company performance).
 
 Incorporating more detailed employee data.
 
-Author
+## Author
 
 Jagan P Ramdas
 
-LINKDIN :
+Linkdin : *https://www.linkedin.com/in/jagan-p-ramdas-9b939530a/*
 
 
 
